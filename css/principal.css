@@ -1,0 +1,512 @@
+/* Comienza declaracion de valores generales */
+
+/* Valores fijos */
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI';
+}
+
+h1{
+    font-family: 'Noto Serif';
+    font-size: 300%;
+    font-style: italic;
+}
+
+h2{
+    font-size: 35px;
+    color: #707070;
+    padding: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 23px;
+}
+
+/*Comienza barra nav*/
+
+.menuNavegacion{
+    width: auto;
+    position: absolute;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.enlaces li{
+    align-items: right;
+    list-style: none;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.enlaces a{
+    text-transform: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.logo img{
+
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+/*Finaliza barra nav*/
+
+/* Comienza footer */
+
+footer{
+    background-color: rgba(0,0, 0,1);
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 25px;
+}
+
+footer ul{
+    padding-right: 50px;
+}
+
+footer ul li{
+    text-decoration: none;
+    color: #ffffff;
+    display:block;
+    font-size: 15px;
+    text-align: left;
+    padding-bottom:5px ;
+}
+
+/* Finaliza footer */
+
+/* Finaliza declaracion de valores generales */
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/*Inicio CSS Index.html */
+
+/*Comienza Foto*/
+
+.hero{
+    height: 700px;
+    background-image: url("../images/people-g9c568e8fa_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.contenedorDeTexto{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#ffffff
+}
+
+/*Finaliza Foto*/
+
+
+/* Comienza Predicas */
+
+.tituloPredicas{
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+
+#VerMas{
+    line-height: 30px;
+    width: 80px;
+    height: 30px;
+}
+
+.VideoPreview{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.VideoPreview iframe{
+    padding: 35px;
+}
+
+/* Finaliza predicas */
+
+
+/* Comienza oracion */
+
+.heroOracionContactanos{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.contenedorDeTextoAtajo{
+    height: 300px;
+    width: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorDeTextoOracionAtajo{
+    background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
+   
+}
+
+.contenedorDeTextoContactanosAtajo{
+    background-image: url("../images/people-g9c568e8fa_1920.jpg");
+}
+
+
+.heroOracionContactanos h3{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.heroOracionContactanos a{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* Finaliza oracion */
+
+/*Finaliza CSS Index.html */
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Inicio CSS Oracion.html */
+
+/* Comienzo imagen */
+
+.heroOracion{
+    background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
+}
+
+.contenedorDeTextoOracion{
+    font-size: 200%
+}
+
+/* Finaliza imagen */
+
+/* Inicia Formulario */
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Name,#Surname,#Mail,#Phone,#Age{
+    border-radius: 4px;
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(0,0,0);
+  }
+
+  .permiso{
+    width: 75%;
+    align-content: center;
+  }
+
+  #Motivo{
+    height: 80px;
+    border-radius: 4px;
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid  rgb(0,0,0);
+    box-sizing: border-box;
+    resize: none;
+  }
+
+  textarea:focus{
+    border: 3px solid #555;
+  }
+
+  #btnOracion{
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 1s;
+  }
+
+  #btnOracion:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+  }
+
+/* Finaliza formulario */
+
+/* Finaliza CSS Oracion.html */
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Comienza CSS contactanos.html */
+
+.heroContactanos{
+    background-image: url("../images/people-g9c568e8fa_1920.jpg");
+}
+
+.contenedorDeTextoContactanos{
+    font-size: 200%
+}
+
+.contactanos{
+    font-size: 20px;
+    text-align: left;
+    color: rgb(0,0,0);
+}
+
+.principalContactanos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+/* Finaliza CSS Contactanos.html */
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Comienza CSS conocenos.html */
+
+.heroConocenos{
+    background-image: url("../images/people-g9c568e8fa_1920.jpg");
+}
+
+.contenedorDeTextoConocenos{
+    font-size: 200%
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.InfoImagen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#textoInfo{
+    width: 50%;
+}
+
+.Info img{
+    width: 300px;
+    height: 300px;
+}
+
+.contenedorDeImagenesMin{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+#imagePrincipal{
+    padding: 25px;
+}
+
+/* Finaliza CSS Conocenos.html */
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Comienza CSS Videos.html */
+
+.contenedorDeTextoVideos{
+    font-size: 200%;
+}
+
+.Cuadros{
+    display: grid;
+    grid-template-columns: repeat(3, 275px);
+    column-gap: 50px;
+    row-gap: 25px;
+    padding: 25px;
+    align-content: center;
+    justify-content: center;
+}
+
+.Cuadro{
+    background-color: red;
+}
+
+.btnVerCanal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+#VerMasCanal{
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  #VerMasCanal:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+  }
+
+/* Finaliza CSS Videos.html */
+
+/* Finaliza edicion principal codigo  */
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Comienzan mediasQuerys */
+
+@media screen and (max-width: 600px) {
+
+    .contenedorDeImagenesMin{
+        display: grid;
+        grid-template-columns: 300px;
+        row-gap: 15px;
+        justify-items: center;
+    }
+
+    .Info img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .contenedorDeTextoVideos{
+        font-size: 170%;
+    }
+
+    .contenedorDeTextoConocenos{
+        font-size: 140%;
+    }
+
+    .Cuadros{
+        display: grid;
+        grid-template-columns: repeat(1, 275px);
+        align-items: center;
+    }
+
+    .heroOracionContactanos{
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    .contenedorDeTextoAtajo{
+        height: 180px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:600px) {
+
+    .contenedorDeImagenesMin{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+
+    .Cuadros{
+        display: grid;
+        grid-template-columns: repeat(2, 275px);
+        column-gap: 15px;
+        align-items: start;
+    }
+
+    .heroOracionContactanos{
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+    }
+
+    .contenedorDeTextoAtajo{
+        height: 300px;
+        width: 500px;
+    }
+}
+
+/* Finalizan mediasQuerys */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
