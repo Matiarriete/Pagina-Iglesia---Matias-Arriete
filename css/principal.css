@@ -463,6 +463,10 @@ footer ul li{
         font-size: 140%;
     }
 
+    .contenedorDeTextoContactanos{
+        font-size: 140%
+    }
+
     .Cuadros{
         display: grid;
         grid-template-columns: repeat(1, 275px);
