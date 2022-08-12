@@ -2,15 +2,17 @@
 
 /* Valores fijos */
 
-* {
-    margin: 0;
-    font-family: 'Segoe UI';
-}
+
 
 h1{
     font-family: 'Noto Serif';
     font-size: 300%;
     font-style: italic;
+}
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI';
 }
 
 h2{
@@ -73,25 +75,33 @@ nav ul li a:hover{
 footer{
     background-color: rgba(0,0, 0,1);
     bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    align-items: start;
     justify-content: left;
     margin-top: 25px;
-}
-
-footer ul{
-    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
 
 footer ul li{
     text-decoration: none;
-    color: #ffffff;
+    color: #bbbbbb;
     display:block;
     font-size: 15px;
+    font-weight: lighter;
     text-align: left;
     padding-bottom:5px ;
+}
+
+footer ul li h3{
+    font-size: 18px;
+    color: white;
+}
+
+footer ul li:hover{
+    color:rgb(255, 255, 255);
+    font-size: 16px;
 }
 
 /* Finaliza footer */
@@ -116,6 +126,7 @@ footer ul li{
 .contenedorDeTexto{
     padding: 0;
     height: 100%;
+    font-size: 200%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -441,6 +452,11 @@ footer ul li{
 /* Comienzan mediasQuerys */
 
 @media screen and (max-width: 600px) {
+
+    footer{        
+        display: grid;
+        grid-template-columns: repeat(1, 202px);
+    }
 
     .contenedorDeImagenesMin{
         display: grid;
