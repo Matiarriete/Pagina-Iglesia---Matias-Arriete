@@ -6,7 +6,6 @@
 
 * {
     margin: 0;
-    font-family: 'Segoe UI';
 }
 
 h1{
@@ -49,8 +48,6 @@ footer ul li, footer ul li a{
     text-align: left;
     padding-bottom:5px ;
 }
-
-
 
 footer ul li h3{
     font-size: 18px;
@@ -358,18 +355,12 @@ footer ul li:hover, footer ul li a:hover{
     font-size: 200%;
 }
 
-.Cuadros{
-    display: grid;
-    grid-template-columns: repeat(3, 275px);
-    column-gap: 50px;
-    row-gap: 25px;
-    padding: 25px;
-    align-content: center;
-    justify-content: center;
+.col-xl-3, .col-lg-4, .col-md-6, .col-sm-12{
+    padding: 15px;
 }
 
-.Cuadro{
-    background-color: red;
+.row{
+    width: auto; margin: auto auto
 }
 
 .btnVerCanal{
@@ -432,20 +423,6 @@ footer ul li:hover, footer ul li a:hover{
         font-size: 120%
     }
 
-    /* .contenedorDeTextoVideos{
-        font-size: 170%;
-    }
-
-    .contenedorDeTextoConocenos{
-        font-size: 140%;
-    } */
-
-    .Cuadros{
-        display: grid;
-        grid-template-columns: repeat(1, 275px);
-        align-items: center;
-    }
-
     .heroOracionContactanos{
         display: grid;
         grid-template-columns: repeat(1, 200px);
@@ -464,13 +441,6 @@ footer ul li:hover, footer ul li a:hover{
         grid-template-columns: repeat(2, 300px);
         row-gap: 15px;
         column-gap: 15px;
-    }
-
-    .Cuadros{
-        display: grid;
-        grid-template-columns: repeat(2, 275px);
-        column-gap: 15px;
-        align-items: start;
     }
 
     .heroOracionContactanos{
