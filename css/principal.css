@@ -6,17 +6,13 @@
 
 * {
     margin: 0;
+    font-family: 'Segoe UI';
 }
 
 h1{
     font-family: 'Noto Serif';
     font-size: 300%;
     font-style: italic;
-}
-
-* {
-    margin: 0;
-    font-family: 'Segoe UI';
 }
 
 h2{
@@ -29,50 +25,6 @@ h2{
 h3{
     font-size: 23px;
 }
-
-/*Comienza barra nav*/
-
-.menuNavegacion{
-    width: auto;
-    position: absolute;
-    margin: auto;
-    overflow: hidden;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-}
-
-.enlaces li{
-    /* Comentario de prueba */
-    display: inline-block;
-    padding-right: 15px;
-}
-
-nav ul li a:hover{
-    text-decoration: underline;
-}
-
-.enlaces a{
-    text-transform: none;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.logo{
-    height: 100px;
-    width: 100px;
-}
-
-.logo img{
-
-    display: block;
-    height: 100px;
-    width: 100px;
-}
-
-/*Finaliza barra nav*/
 
 /* Comienza footer */
 
@@ -88,7 +40,7 @@ footer{
     padding-top: 10px;
 }
 
-footer ul li{
+footer ul li, footer ul li a{
     text-decoration: none;
     color: #bbbbbb;
     display:block;
@@ -98,12 +50,14 @@ footer ul li{
     padding-bottom:5px ;
 }
 
+
+
 footer ul li h3{
     font-size: 18px;
     color: white;
 }
 
-footer ul li:hover{
+footer ul li:hover, footer ul li a:hover{
     color:rgb(255, 255, 255);
     font-size: 16px;
 }
@@ -474,17 +428,17 @@ footer ul li:hover{
         height: 250px;
     }
 
-    .contenedorDeTextoVideos{
+    .contenedorDeTexto{
+        font-size: 120%
+    }
+
+    /* .contenedorDeTextoVideos{
         font-size: 170%;
     }
 
     .contenedorDeTextoConocenos{
         font-size: 140%;
-    }
-
-    .contenedorDeTextoContactanos{
-        font-size: 120%
-    }
+    } */
 
     .Cuadros{
         display: grid;
