@@ -215,29 +215,10 @@ footer ul li:hover, footer ul li a:hover{
     align-items: center;
 }
 
-#Name,#Surname,#Mail,#Phone,#Age{
+#floatingName,#floatingMail,#floatingPhone,#floatingAge,#floatingMotivo{
     border-radius: 4px;
-    width: 75%;
-    padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid rgb(0,0,0);
-  }
-
-  .permiso{
-    width: 75%;
-    align-content: center;
-  }
-
-  #Motivo{
-    height: 80px;
-    border-radius: 4px;
-    width: 75%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 2px solid  rgb(0,0,0);
-    box-sizing: border-box;
-    resize: none;
   }
 
   textarea:focus{
@@ -359,10 +340,6 @@ footer ul li:hover, footer ul li a:hover{
     padding: 15px;
 }
 
-.row{
-    width: auto; margin: auto auto
-}
-
 .btnVerCanal{
     display: flex;
     flex-direction: row;
@@ -451,6 +428,13 @@ footer ul li:hover, footer ul li a:hover{
     .contenedorDeTextoAtajo{
         height: 300px;
         width: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width:600px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
     }
 }
 
