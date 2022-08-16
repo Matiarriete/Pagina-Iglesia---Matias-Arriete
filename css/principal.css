@@ -8,27 +8,27 @@
     margin: 0;
 }
 
-h1{
+h1 {
     font-family: 'Noto Serif';
     font-size: 300%;
     font-style: italic;
 }
 
-h2{
+h2 {
     font-size: 35px;
     color: #707070;
     padding: 20px;
     text-align: center;
 }
 
-h3{
+h3 {
     font-size: 23px;
 }
 
 /* Comienza footer */
 
-footer{
-    background-color: rgba(0,0, 0,1);
+footer {
+    background-color: rgba(0, 0, 0, 1);
     bottom: 0;
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -39,23 +39,25 @@ footer{
     padding-top: 10px;
 }
 
-footer ul li, footer ul li a{
+footer ul li,
+footer ul li a {
     text-decoration: none;
     color: #bbbbbb;
-    display:block;
+    display: block;
     font-size: 15px;
     font-weight: lighter;
     text-align: left;
-    padding-bottom:5px ;
+    padding-bottom: 5px;
 }
 
-footer ul li h3{
+footer ul li h3 {
     font-size: 18px;
     color: white;
 }
 
-footer ul li:hover, footer ul li a:hover{
-    color:rgb(255, 255, 255);
+footer ul li:hover,
+footer ul li a:hover {
+    color: rgb(255, 255, 255);
     font-size: 16px;
 }
 
@@ -70,7 +72,7 @@ footer ul li:hover, footer ul li a:hover{
 
 /*Comienza Foto*/
 
-.hero{
+.hero {
     height: 700px;
     background-image: url("../images/people-g9c568e8fa_1920.jpg");
     background-position: center;
@@ -78,7 +80,7 @@ footer ul li:hover, footer ul li a:hover{
     background-attachment: scroll;
 }
 
-.contenedorDeTexto{
+.contenedorDeTexto {
     padding: 0;
     height: 100%;
     font-size: 200%;
@@ -88,7 +90,7 @@ footer ul li:hover, footer ul li a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:#ffffff
+    color: #ffffff
 }
 
 /*Finaliza Foto*/
@@ -96,7 +98,7 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Comienza Predicas */
 
-.tituloPredicas{
+.tituloPredicas {
     margin: auto;
     overflow: hidden;
     padding: 10px;
@@ -106,32 +108,25 @@ footer ul li:hover, footer ul li a:hover{
     height: 70px;
 }
 
-.boton{
+.boton {
     display: flex;
     justify-content: center;
-    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
     border-radius: 4px;
 }
 
-
-#VerMas{
-    line-height: 30px;
-    width: 80px;
-    height: 30px;
-}
-
-.VideoPreview{
+.VideoPreview {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
 }
 
-.VideoPreview iframe{
+.VideoPreview iframe {
     padding: 35px;
 }
 
@@ -140,7 +135,7 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Comienza oracion */
 
-.heroOracionContactanos{
+.heroOracionContactanos {
     display: grid;
     grid-template-columns: repeat(2, 500px);
     align-items: center;
@@ -148,7 +143,7 @@ footer ul li:hover, footer ul li a:hover{
     justify-content: space-evenly;
 }
 
-.contenedorDeTextoAtajo{
+.contenedorDeTextoAtajo {
     height: 300px;
     width: 500px;
     background-position: center;
@@ -161,17 +156,17 @@ footer ul li:hover, footer ul li a:hover{
     justify-content: center;
 }
 
-.contenedorDeTextoOracionAtajo{
+.contenedorDeTextoOracionAtajo {
     background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
-   
+
 }
 
-.contenedorDeTextoContactanosAtajo{
+.contenedorDeTextoContactanosAtajo {
     background-image: url("../images/people-g9c568e8fa_1920.jpg");
 }
 
 
-.heroOracionContactanos h3{
+.heroOracionContactanos h3 {
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
@@ -179,7 +174,7 @@ footer ul li:hover, footer ul li a:hover{
     text-align: center;
 }
 
-.heroOracionContactanos a{
+.heroOracionContactanos a {
     width: 200px;
     height: 50px;
     line-height: 50px;
@@ -196,11 +191,11 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Comienzo imagen */
 
-.heroOracion{
+.heroOracion {
     background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
 }
 
-.contenedorDeTextoOracion{
+.contenedorDeTextoOracion {
     font-size: 200%
 }
 
@@ -208,25 +203,29 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Inicia Formulario */
 
-.form{
+.form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
 
-#floatingName,#floatingMail,#floatingPhone,#floatingAge,#floatingMotivo{
+#floatingName,
+#floatingMail,
+#floatingPhone,
+#floatingAge,
+#floatingMotivo {
     border-radius: 4px;
     box-sizing: border-box;
-    border: 2px solid rgb(0,0,0);
-  }
+    border: 2px solid rgb(0, 0, 0);
+}
 
-  textarea:focus{
+textarea:focus {
     border: 3px solid #555;
-  }
+}
 
-  #btnOracion{
-    background-color: rgb(0,0,0);
+#btnOracion {
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 15px 32px;
     margin: 10px;
@@ -236,12 +235,12 @@ footer ul li:hover, footer ul li a:hover{
     font-size: 16px;
     border-radius: 4px;
     transition: all 1s;
-  }
+}
 
-  #btnOracion:hover{
+#btnOracion:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(0,0,0);
-  }
+    color: rgb(0, 0, 0);
+}
 
 /* Finaliza formulario */
 
@@ -252,21 +251,21 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Comienza CSS contactanos.html */
 
-.heroContactanos{
+.heroContactanos {
     background-image: url("../images/people-g9c568e8fa_1920.jpg");
 }
 
-.contenedorDeTextoContactanos{  
+.contenedorDeTextoContactanos {
     font-size: 200%
 }
 
-.contactanos{
+.contactanos {
     font-size: 20px;
     text-align: left;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
 }
 
-.principalContactanos{
+.principalContactanos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -281,23 +280,23 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Comienza CSS conocenos.html */
 
-.heroConocenos{
+.heroConocenos {
     background-image: url("../images/people-g9c568e8fa_1920.jpg");
 }
 
-.contenedorDeTextoConocenos{
+.contenedorDeTextoConocenos {
     font-size: 200%
 }
 
-.Info{
+.Info {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
+
 }
 
-.InfoImagen{
+.InfoImagen {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -305,23 +304,23 @@ footer ul li:hover, footer ul li a:hover{
     justify-content: center;
 }
 
-#textoInfo{
+#textoInfo {
     width: 50%;
 }
 
-.Info img{
+.Info img {
     width: 300px;
     height: 300px;
 }
 
-.contenedorDeImagenesMin{
+.contenedorDeImagenesMin {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     row-gap: 15px;
     column-gap: 15px;
 }
 
-#imagePrincipal{
+#imagePrincipal {
     padding: 25px;
 }
 
@@ -332,15 +331,18 @@ footer ul li:hover, footer ul li a:hover{
 
 /* Comienza CSS Videos.html */
 
-.contenedorDeTextoVideos{
+.contenedorDeTextoVideos {
     font-size: 200%;
 }
 
-.col-xl-3, .col-lg-4, .col-md-6, .col-sm-12{
+.col-xl-3,
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
     padding: 15px;
 }
 
-.btnVerCanal{
+.btnVerCanal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -348,23 +350,6 @@ footer ul li:hover, footer ul li a:hover{
     align-items: center;
     justify-content: center;
 }
-
-#VerMasCanal{
-    background-color: rgb(0,0,0);
-    color: rgb(255, 255, 255);
-    padding: 15px 32px;
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-  }
-
-  #VerMasCanal:hover{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0,0,0);
-  }
 
 /* Finaliza CSS Videos.html */
 
@@ -379,33 +364,33 @@ footer ul li:hover, footer ul li a:hover{
 
 @media screen and (max-width: 600px) {
 
-    footer{        
+    footer {
         display: grid;
         grid-template-columns: repeat(1, 202px);
     }
 
-    .contenedorDeImagenesMin{
+    .contenedorDeImagenesMin {
         display: grid;
         grid-template-columns: 300px;
         row-gap: 15px;
         justify-items: center;
     }
 
-    .Info img{
+    .Info img {
         width: 250px;
         height: 250px;
     }
 
-    .contenedorDeTexto{
+    .contenedorDeTexto {
         font-size: 120%
     }
 
-    .heroOracionContactanos{
+    .heroOracionContactanos {
         display: grid;
         grid-template-columns: repeat(1, 200px);
     }
 
-    .contenedorDeTextoAtajo{
+    .contenedorDeTextoAtajo {
         height: 180px;
         width: 300px;
     }
@@ -413,26 +398,26 @@ footer ul li:hover, footer ul li a:hover{
 
 @media screen and (max-width: 1023px) and (min-width:600px) {
 
-    .contenedorDeImagenesMin{
+    .contenedorDeImagenesMin {
         display: grid;
         grid-template-columns: repeat(2, 300px);
         row-gap: 15px;
         column-gap: 15px;
     }
 
-    .heroOracionContactanos{
+    .heroOracionContactanos {
         display: grid;
         grid-template-columns: repeat(1, 500px);
     }
 
-    .contenedorDeTextoAtajo{
+    .contenedorDeTextoAtajo {
         height: 300px;
         width: 500px;
     }
 }
 
 @media screen and (max-width: 800px) and (min-width:600px) {
-    footer{
+    footer {
         display: grid;
         grid-template-columns: repeat(2, 200px);
     }
