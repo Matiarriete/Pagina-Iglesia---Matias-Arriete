@@ -50,6 +50,10 @@ footer ul li a {
     padding-bottom: 5px;
 }
 
+footer ul li a i{
+    padding-right: 5px;
+}
+
 footer ul li h3 {
     font-size: 18px;
     color: white;
@@ -118,18 +122,6 @@ footer ul li a:hover {
     border-radius: 4px;
 }
 
-.VideoPreview {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px;
-}
-
-.VideoPreview iframe {
-    padding: 35px;
-}
-
 /* Finaliza predicas */
 
 
@@ -144,25 +136,11 @@ footer ul li a:hover {
 }
 
 .contenedorDeTextoAtajo {
-    height: 300px;
-    width: 500px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.contenedorDeTextoOracionAtajo {
-    background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
-
-}
-
-.contenedorDeTextoContactanosAtajo {
-    background-image: url("../images/people-g9c568e8fa_1920.jpg");
 }
 
 
