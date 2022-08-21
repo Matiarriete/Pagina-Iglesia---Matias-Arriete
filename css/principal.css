@@ -313,11 +313,13 @@ textarea:focus {
     font-size: 200%;
 }
 
-.col-xl-3,
-.col-lg-4,
-.col-md-6,
-.col-sm-12 {
-    padding: 15px;
+#cardVideo {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-content: center;
 }
 
 .btnVerCanal {
@@ -328,6 +330,7 @@ textarea:focus {
     align-items: center;
     justify-content: center;
 }
+
 
 /* Finaliza CSS Videos.html */
 
@@ -372,6 +375,13 @@ textarea:focus {
         height: 180px;
         width: 300px;
     }
+
+    #cardVideo {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1023px) and (min-width:600px) {
@@ -391,6 +401,15 @@ textarea:focus {
     .contenedorDeTextoAtajo {
         height: 300px;
         width: 500px;
+    }
+
+    #cardVideo {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 275px);
+        column-gap: 25px;
+        row-gap: 25px;
+        justify-content: center;
     }
 }
 
