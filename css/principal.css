@@ -122,6 +122,15 @@ footer ul li a:hover {
     border-radius: 4px;
 }
 
+#cardVideoInicio {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-content: center;
+}
+
 /* Finaliza predicas */
 
 
@@ -343,6 +352,17 @@ textarea:focus {
 
 /* Comienzan mediasQuerys */
 
+@media screen  and (max-width: 1325px) and (min-width: 1024px) {
+    #cardVideo, #cardVideoInicio {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 225px);
+        column-gap: 25px;
+        row-gap: 25px;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     footer {
@@ -376,7 +396,7 @@ textarea:focus {
         width: 300px;
     }
 
-    #cardVideo {
+    #cardVideo, #cardVideoInicio {
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(1, 300px);
@@ -403,7 +423,7 @@ textarea:focus {
         width: 500px;
     }
 
-    #cardVideo {
+    #cardVideo, #cardVideoInicio {
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(2, 275px);

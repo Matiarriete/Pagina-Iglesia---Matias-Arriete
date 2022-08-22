@@ -26,8 +26,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="contactanos.html" class="nav-link text-white">Contactanos</a></li>
                         <li class="nav-item"><a href="conocenos.html" class="nav-link text-white">Conocenos</a></li>
-                        <li class="nav-item"><a href="oracion.html" class="nav-link text-white">Oracion</a></li>
-                        <li class="nav-item"><u><a href="#" class="nav-link text-white">Predicas</a></u></li>
+                        <li class="nav-item"><a href="oracion.html" class="nav-link text-white">Oración</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-bg-light rounded-pill">Predicas</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,9 +40,7 @@
         </section>
     </header>
     <!-- Parte de videos -->
-    <div id="cardVideo">
-
-    </div>
+    <div id="cardVideo"></div>
 
     <div class="btnVerCanal">
         <a class="btn btn-dark btnVerCanal" href="https://www.youtube.com/c/IglesiaTiempoNuevo" target="_blank">Quíeres
@@ -99,26 +97,26 @@
         }
 
         const cardVideo = document.getElementById('cardVideo');
-        const url = 'https://www.googleapis.com/youtube/v3/search' +
+        const url = 'https://www.googleapis.com/youtube/v3/activities' +
             '?key=AIzaSyCcFXIBWWXpqWOlv_Hra2hAN4j5MqQCanQ' +
             '&channelId=UCBBGT1Knv4HbYNwqqlXgl2g' +
             '&type=video' +
             '&part=snippet' +
             '&order=date' +
             '&maxResults=9';
-
+            
         fetch(url)
             .then((resp) => resp.json())
             .then(function (data) {
                 let videos = data.items;
                 videos.forEach(element => {
-                    console.log(element.snippet.title)
                     // ✅ Create element
                     const card = document.createElement('div');
                     const ratio = document.createElement('div');
                     const iframe = document.createElement('iframe');
                     const cardBody = document.createElement('div');
                     const h5 = document.createElement('h5');
+                    
 
                     // ✅ Add classes to element
                     card.classList.add('card');
@@ -129,7 +127,11 @@
 
 
                     // ✅ Add content to element
-                    iframe.src = 'https://www.youtube.com/embed/' + element.id.videoId;
+                    var string = element.snippet.thumbnails.default.url;
+                    var stringCortado = string.split('/')[4];
+                    iframe.src = 'https://www.youtube.com/embed/' + stringCortado;
+                    iframe.allow = 'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+                    iframe.allowFullscreen = true;
                     h5.textContent = element.snippet.title;
 
                     // ✅ add elements
