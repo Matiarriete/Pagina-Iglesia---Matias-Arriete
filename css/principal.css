@@ -295,6 +295,10 @@ textarea:focus {
     width: 50%;
 }
 
+#carouselExampleIndicators img{
+    height: 100%;
+}
+
 .Info img {
     width: 300px;
     height: 300px;
