@@ -353,7 +353,7 @@ textarea:focus {
 /* Comienzan mediasQuerys */
 
 @media screen  and (max-width: 1325px) and (min-width: 1024px) {
-    #cardVideo, #cardVideoInicio {
+    #cardVideoInicio {
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(4, 225px);
