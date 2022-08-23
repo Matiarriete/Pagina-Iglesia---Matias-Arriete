@@ -335,27 +335,27 @@ textarea:focus {
 }
 
 #cardJovenes{
-    background-image: url(../images/JTN.jpg);
+    background-image: url("../images/JTN.jpg");
 }
 
 #cardPre{
-    background-image: url(../images/JTN.jpg);
+    background-image: url("../images/JTN.jpg");
 }
 
 #cardAdos{
-    background-image: url(../images/JTN.jpg);
+    background-image: url("../images/JTN.jpg");
 }
 
 #cardMatri{
-    background-image: url(../images/JTN.jpg);
+    background-image: url("../images/JTN.jpg");
 }
 
 #cardPast{
-    background-image: url(../images/JTN.jpg);
+    background-image: url("../images/JTN.jpg");
 }
 
 #cardNinos{
-    background-image: url(../images/JTN.jpg);
+    background-image: url("../images/JTN.jpg");
 }
 
 #imagePrincipal {
