@@ -42,17 +42,47 @@
     </header>
     <!-- Comienza la seccion de contactanos -->
     <div class="principalContactanos">
+        
+        <div class="formContactanos">
+            <h2>Contactanos</h2>
+            <form>
+            <div class="form-floating">
+                <input type="text" class="form-control" required placeholder="Nombre"
+                id="floatingNombre"></input>
+                <label for="floatingNombre">Nombre</label>
+            </div>
+            <div class="form-floating">
+                <input type="number" class="form-control" required placeholder="Telefono"
+                id="floatingTelefono"></input>
+                <label for="floatingTelefono">Telefono</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" required placeholder="Mensaje"
+                id="floatingMensaje"></textarea>
+                <label for="floatingMensaje">Mensaje</label>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary fw-bold" id="btnOracion" type="submit">Enviar</button>
+            </div>
+          </form>            
+        </div>
+        <div class="contactData">
+            <h2 class="contactanos">DIRECCION</h2>
+            <p>Federico Brandsen 358<br>Cordoba, Cordoba, Argentina</p>
+            <h2 class="contactanos">TELEFONO</h2>
+            <h2 class="contactanos">HORARIOS</h2>
+            <p>Miercoles 20:00 hs - Reunion Oracion</p>
+            <p>Domingos 10:00 hs - Reunion General</p>
+            <h2 class="contactanos">REDES SOCIALES</h2>
+            <a href="https://www.instagram.com/tiemponuevoiglesia/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/c/IglesiaTiempoNuevo" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.youtube.com/c/IglesiaTiempoNuevo" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
         <iframe id="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.649753014141!2d-64.19482920000002!3d-31.396219700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329861d4881919%3A0xef2b34f6c98e393b!2sFederico%20Brandsen%20358%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2ses!4v1658223561433!5m2!1ses!2ses"
-            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-        <div>
-            <h2 class="contactanos">Dirección</h2>
-            <h2 class="contactanos">Telefono</h2>
-            <h2 class="contactanos">Horarios</h2>
-            <h2 class="contactanos">Redes sociales</h2>
-        </div>
 
     </div>
     <!-- Footer -->
