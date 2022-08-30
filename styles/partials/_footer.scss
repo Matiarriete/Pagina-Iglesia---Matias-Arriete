@@ -1,0 +1,41 @@
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    align-items: start;
+    justify-content: left;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+
+    ul {
+
+        li,
+        a {
+            text-decoration: none;
+            color: #bbbbbb;
+            display: block;
+            font-size: 15px;
+            font-weight: lighter;
+            text-align: left;
+            padding-bottom: 5px;
+        }
+
+        li {
+            a i {
+                padding-right: 5px;
+            }
+
+            h3{
+                font-size: 18px;
+                color: white;
+            }
+
+            :hover, a:hover{
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+            }
+        }
+    }
+}

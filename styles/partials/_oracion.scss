@@ -1,0 +1,51 @@
+
+/* Comienzo imagen */
+
+.heroOracion {
+    background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
+}
+
+.contenedorDeTextoOracion {
+    font-size: 200%
+}
+
+/* Finaliza imagen */
+
+/* Inicia Formulario */
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#floatingName,
+#floatingMail,
+#floatingPhone,
+#floatingAge,
+#floatingMotivo {
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#btnOracion {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 1s;
+
+    :hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+}
+
+/* Finaliza formulario */

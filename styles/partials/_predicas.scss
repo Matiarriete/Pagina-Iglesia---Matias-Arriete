@@ -1,0 +1,22 @@
+.contenedorDeTextoVideos {
+    font-size: 200%;
+}
+
+#cardVideo {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 25px;
+    row-gap: 25px;
+    justify-content: center;
+}
+
+.btnVerCanal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
