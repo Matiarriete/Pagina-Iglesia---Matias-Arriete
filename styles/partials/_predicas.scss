@@ -1,3 +1,7 @@
+.heroVideos{
+    @include backImage("../images/people-g9c568e8fa_1920.jpg", 700px);
+}
+
 .contenedorDeTextoVideos {
     font-size: 200%;
 }
@@ -12,11 +16,7 @@
 }
 
 .btnVerCanal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @extend %flexRow;
     padding: 25px;
-    align-items: center;
-    justify-content: center;
 }
 

@@ -1,5 +1,5 @@
 .heroConocenos {
-    background-image: url("../images/people-g9c568e8fa_1920.jpg");
+    @include backImage("../images/people-g9c568e8fa_1920.jpg", 700px);
 }
 
 .contenedorDeTextoConocenos {
@@ -7,19 +7,11 @@
 }
 
 .Info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-
+    @extend %flexColumn;
 }
 
 .InfoImagen {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @extend %flexRow;
 }
 
 #textoInfo {
@@ -38,26 +30,19 @@
 }
 
 .cardMinisterios{
-    height: 300px;
-    width: 300px;
     border-radius: 5px;
-    background-size: cover;
-    background-position: center;
 }
 
 .img-wrapper{
    width: 100%;
    height: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+   @extend %flexColumn;
    background: rgba(0, 0, 0, 0.4);
    opacity: 0;
    transition: 0.5s;
 
     h2{
-        color: #ffffff;
+        color: map-get($map: $colors, $key: blanco);
     }
 }
 
@@ -66,27 +51,27 @@
 }
 
 #cardJovenes{
-    background-image: url("../images/JTN.jpg");
+    @include backImage("../images/JTN.jpg", 300px, 300px);
 }
 
 #cardPre{
-    background-image: url("../images/JTN.jpg");
+    @include backImage("../images/JTN.jpg", 300px, 300px);
 }
 
 #cardAdos{
-    background-image: url("../images/JTN.jpg");
+    @include backImage("../images/JTN.jpg", 300px, 300px);
 }
 
 #cardMatri{
-    background-image: url("../images/JTN.jpg");
+    @include backImage("../images/JTN.jpg", 300px, 300px);
 }
 
 #cardPast{
-    background-image: url("../images/JTN.jpg");
+    @include backImage("../images/JTN.jpg", 300px, 300px);
 }
 
 #cardNinos{
-    background-image: url("../images/JTN.jpg");
+    @include backImage("../images/JTN.jpg", 300px, 300px);
 }
 
 #imagePrincipal {

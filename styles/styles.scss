@@ -1,9 +1,12 @@
-@import "./partials/footer.scss";
-@import "./partials/index.scss";
-@import "./partials/conocenos.scss";
-@import "./partials/oracion";
-@import "./partials/predicas";
-@import "./partials/contactanos";
+@import "./partials/extends",
+        "./partials/mixins",
+        "./partials/maps",
+        "./partials/footer.scss",
+        "./partials/index.scss",
+        "./partials/conocenos.scss",
+        "./partials/oracion",
+        "./partials/predicas",
+        "./partials/contactanos";
 
 * {
     margin: 0;
@@ -17,7 +20,7 @@ h1 {
 
 h2 {
     font-size: 35px;
-    color: #707070;
+    color: map-get($map: $colors, $key: grisH2);
     padding: 20px;
     text-align: center;
 }
@@ -25,121 +28,3 @@ h2 {
 h3 {
     font-size: 23px;
 }
-
-
-/* Comienzan mediasQuerys */
-
-@media screen  and (max-width: 1325px) and (min-width: 1024px) {
-    #cardVideoInicio {
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(4, 225px);
-        column-gap: 25px;
-        row-gap: 25px;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    footer {
-        display: grid;
-        grid-template-columns: repeat(1, 202px);
-    }
-
-    .contenedorDeImagenesMin {
-        display: grid;
-        grid-template-columns: 300px;
-        row-gap: 15px;
-        justify-items: center;
-    }
-
-    .Info img {
-        width: 250px;
-        height: 250px;
-    }
-
-    .contenedorDeTexto {
-        font-size: 120%
-    }
-
-    .heroOracionContactanos {
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-    }
-
-    .contenedorDeTextoAtajo {
-        height: 180px;
-        width: 300px;
-    }
-
-    #cardVideo, #cardVideoInicio {
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-    }
-
-    .principalContactanos {
-        display: grid;
-        grid-template-columns: repeat(1,100%);
-    }
-}
-
-@media screen and (max-width: 1023px) and (min-width:600px) {
-
-    .contenedorDeImagenesMin {
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
-        row-gap: 15px;
-        column-gap: 15px;
-    }
-
-    .heroOracionContactanos {
-        display: grid;
-        grid-template-columns: repeat(1, 500px);
-    }
-
-    .contenedorDeTextoAtajo {
-        height: 300px;
-        width: 500px;
-    }
-
-    #cardVideo, #cardVideoInicio {
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 275px);
-        column-gap: 25px;
-        row-gap: 25px;
-        justify-content: center;
-    }
-
-    .contactData{
-        grid-area: contactDataGrid;
-    }
-
-    .formContactanos{
-        grid-area: formContactanosGrid;
-    }
-
-    .map{
-        grid-area: mapaGrid;
-    }
-
-    .principalContactanos {
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        grid-template-areas: 
-            'contactDataGrid mapGrid'
-            'formContactanosGrid formContactanosGrid';
-    }
-}
-
-@media screen and (max-width: 800px) and (min-width:600px) {
-    footer {
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-    }
-}
-
-/* Finalizan mediasQuerys */

@@ -1,3 +1,19 @@
+.redesContact, .btnVerCanal, .InfoImagen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.form, .img-wrapper, .Info, .contenedorDeTextoAtajo, .contenedorDeTexto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 footer {
   background-color: rgb(0, 0, 0);
   bottom: 0;
@@ -12,7 +28,7 @@ footer {
 footer ul li,
 footer ul a {
   text-decoration: none;
-  color: #bbbbbb;
+  color: rgb(187, 187, 187);
   display: block;
   font-size: 15px;
   font-weight: lighter;
@@ -24,7 +40,7 @@ footer ul li a i {
 }
 footer ul li h3 {
   font-size: 18px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 footer ul li :hover, footer ul li a:hover {
   color: rgb(255, 255, 255);
@@ -44,13 +60,8 @@ footer ul li :hover, footer ul li a:hover {
   padding: 0;
   height: 100%;
   font-size: 200%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 /*Finaliza Foto*/
@@ -110,35 +121,19 @@ footer ul li :hover, footer ul li a:hover {
 .contenedorDeTextoAtajo {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Finaliza oracion */
 .heroConocenos {
+  height: 700px;
   background-image: url("../images/people-g9c568e8fa_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .contenedorDeTextoConocenos {
   font-size: 200%;
-}
-
-.Info {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.InfoImagen {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 #textoInfo {
@@ -158,26 +153,18 @@ footer ul li :hover, footer ul li a:hover {
 }
 
 .cardMinisterios {
-  height: 300px;
-  width: 300px;
   border-radius: 5px;
-  background-size: cover;
-  background-position: center;
 }
 
 .img-wrapper {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: 0.5s;
 }
 .img-wrapper h2 {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .cardMinisterios:hover .img-wrapper {
@@ -185,27 +172,57 @@ footer ul li :hover, footer ul li a:hover {
 }
 
 #cardJovenes {
+  height: 300px;
+  width: 300px;
   background-image: url("../images/JTN.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #cardPre {
+  height: 300px;
+  width: 300px;
   background-image: url("../images/JTN.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #cardAdos {
+  height: 300px;
+  width: 300px;
   background-image: url("../images/JTN.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #cardMatri {
+  height: 300px;
+  width: 300px;
   background-image: url("../images/JTN.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #cardPast {
+  height: 300px;
+  width: 300px;
   background-image: url("../images/JTN.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #cardNinos {
+  height: 300px;
+  width: 300px;
   background-image: url("../images/JTN.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 #imagePrincipal {
@@ -216,7 +233,11 @@ footer ul li :hover, footer ul li a:hover {
 
 /* Comienzo imagen */
 .heroOracion {
-  background-image: url("../images/grid_54a374d2a749070d6c71fb28829887fc.jpg");
+  height: 700px;
+  background-image: url("../images/people-g9c568e8fa_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .contenedorDeTextoOracion {
@@ -225,13 +246,6 @@ footer ul li :hover, footer ul li a:hover {
 
 /* Finaliza imagen */
 /* Inicia Formulario */
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-}
-
 #floatingName,
 #floatingMail,
 #floatingPhone,
@@ -260,6 +274,14 @@ footer ul li :hover, footer ul li a:hover {
 }
 
 /* Finaliza formulario */
+.heroVideos {
+  height: 700px;
+  background-image: url("../images/people-g9c568e8fa_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 .contenedorDeTextoVideos {
   font-size: 200%;
 }
@@ -275,16 +297,15 @@ footer ul li :hover, footer ul li a:hover {
 }
 
 .btnVerCanal {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 25px;
-  align-items: center;
-  justify-content: center;
 }
 
 .heroContactanos {
+  height: 700px;
   background-image: url("../images/people-g9c568e8fa_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .contenedorDeTextoContactanos {
@@ -305,11 +326,6 @@ footer ul li :hover, footer ul li a:hover {
   margin-top: 20px;
 }
 
-.redesContact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 .redesContact a {
   color: rgb(255, 255, 255);
   padding-right: 15px;
@@ -350,108 +366,11 @@ h1 {
 
 h2 {
   font-size: 35px;
-  color: #707070;
+  color: rgb(112, 112, 112);
   padding: 20px;
   text-align: center;
 }
 
 h3 {
   font-size: 23px;
-}
-
-/* Comienzan mediasQuerys */
-@media screen and (max-width: 1325px) and (min-width: 1024px) {
-  #cardVideoInicio {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 225px);
-    -moz-column-gap: 25px;
-         column-gap: 25px;
-    row-gap: 25px;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 600px) {
-  footer {
-    display: grid;
-    grid-template-columns: repeat(1, 202px);
-  }
-  .contenedorDeImagenesMin {
-    display: grid;
-    grid-template-columns: 300px;
-    row-gap: 15px;
-    justify-items: center;
-  }
-  .Info img {
-    width: 250px;
-    height: 250px;
-  }
-  .contenedorDeTexto {
-    font-size: 120%;
-  }
-  .heroOracionContactanos {
-    display: grid;
-    grid-template-columns: repeat(1, 300px);
-  }
-  .contenedorDeTextoAtajo {
-    height: 180px;
-    width: 300px;
-  }
-  #cardVideo, #cardVideoInicio {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(1, 300px);
-    justify-content: center;
-  }
-  .principalContactanos {
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-  }
-}
-@media screen and (max-width: 1023px) and (min-width: 600px) {
-  .contenedorDeImagenesMin {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    row-gap: 15px;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-  }
-  .heroOracionContactanos {
-    display: grid;
-    grid-template-columns: repeat(1, 500px);
-  }
-  .contenedorDeTextoAtajo {
-    height: 300px;
-    width: 500px;
-  }
-  #cardVideo, #cardVideoInicio {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 275px);
-    -moz-column-gap: 25px;
-         column-gap: 25px;
-    row-gap: 25px;
-    justify-content: center;
-  }
-  .contactData {
-    grid-area: contactDataGrid;
-  }
-  .formContactanos {
-    grid-area: formContactanosGrid;
-  }
-  .map {
-    grid-area: mapaGrid;
-  }
-  .principalContactanos {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: "contactDataGrid mapGrid" "formContactanosGrid formContactanosGrid";
-  }
-}
-@media screen and (max-width: 800px) and (min-width: 600px) {
-  footer {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-  }
-}
-/* Finalizan mediasQuerys *//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

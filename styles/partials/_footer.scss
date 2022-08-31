@@ -1,5 +1,5 @@
 footer {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: map-get($map: $colors, $key: negro);
     bottom: 0;
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -14,7 +14,7 @@ footer {
         li,
         a {
             text-decoration: none;
-            color: #bbbbbb;
+            color: map-get($map: $colors, $key: grisFooter);
             display: block;
             font-size: 15px;
             font-weight: lighter;
@@ -29,11 +29,11 @@ footer {
 
             h3{
                 font-size: 18px;
-                color: white;
+                color: map-get($map: $colors, $key: blanco);
             }
 
             :hover, a:hover{
-                color: rgb(255, 255, 255);
+                color: map-get($map: $colors, $key: blanco);
                 font-size: 16px;
             }
         }

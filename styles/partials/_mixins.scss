@@ -1,0 +1,10 @@
+@mixin backImage($backImage, $alto, $ancho: 0) {
+    height: $alto;
+    @if $ancho != 0 {
+        width: $ancho;
+    }
+    background-image: url($backImage);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
