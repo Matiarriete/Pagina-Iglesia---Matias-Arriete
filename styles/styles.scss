@@ -1,12 +1,13 @@
-@import "./partials/extends",
-        "./partials/mixins",
-        "./partials/maps",
+@import "./partials/extends.scss",
+        "./partials/mixins.scss",
+        "./partials/maps.scss",
         "./partials/footer.scss",
         "./partials/index.scss",
         "./partials/conocenos.scss",
-        "./partials/oracion",
-        "./partials/predicas",
-        "./partials/contactanos";
+        "./partials/oracion.scss",
+        "./partials/predicas.scss",
+        "./partials/contactanos.scss",
+        "./partials/mediasQueries.scss";
 
 * {
     margin: 0;
