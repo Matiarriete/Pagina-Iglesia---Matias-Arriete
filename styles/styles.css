@@ -42,7 +42,7 @@ footer ul li h3 {
   font-size: 18px;
   color: rgb(255, 255, 255);
 }
-footer ul li :hover, footer ul li a:hover {
+footer ul li a:hover {
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
@@ -231,10 +231,6 @@ footer ul li :hover, footer ul li a:hover {
   padding: 25px;
 }
 
-.redireccion {
-  text-decoration: none;
-}
-
 /* Comienzo imagen */
 .heroOracion {
   height: 700px;
@@ -356,6 +352,18 @@ footer ul li :hover, footer ul li a:hover {
 .principalContactanos {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
+}
+
+.heroMinisterio {
+  height: 700px;
+  background-image: url("../images/people-g9c568e8fa_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.contenedorDeTextoMinisterio {
+  font-size: 200%;
 }
 
 /* Comienzan mediasQuerys */

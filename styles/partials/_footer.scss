@@ -32,7 +32,7 @@ footer {
                 color: map-get($map: $colors, $key: blanco);
             }
 
-            :hover, a:hover{
+            a:hover{
                 color: map-get($map: $colors, $key: blanco);
                 font-size: 16px;
             }

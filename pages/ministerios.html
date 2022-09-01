@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos</title>
+    <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,20 +32,13 @@
                 </div>
             </div>
         </nav>
-        <section class="heroVideos">
-            <div class="contenedorDeTexto contenedorDeTextoVideos">
-                <h1>Prédicas</h1>
+        <section class="heroMinisterio">
+            <div class="contenedorDeTexto contenedorDeTextoMinisterio">
             </div>
-
         </section>
     </header>
     <!-- Parte de videos -->
-    <div id="cardVideo"></div>
-
-    <div class="btnVerCanal">
-        <a class="btn btn-dark btnVerCanal" href="https://www.youtube.com/c/IglesiaTiempoNuevo" target="_blank">Quíeres
-            ver mas? Visita nuestro canal</a>
-    </div>
+    <div id="contenidoMinisterio"></div>
     <!-- Footer -->
     <footer>
 
@@ -54,13 +46,12 @@
             <li>
                 <h3>Conocenos</h3>
             </li>
-            <li><a href="conocenos.html">General</a></li>
-            <li><a href="ministerios.html?Matrimonios">Matrimonios</a></li>
-            <li><a href="ministerios.html?Jovenes">Jovenes</a></li>
-            <li><a href="ministerios.html?Adolescentes">Adolescentes</a></li>
-            <li><a href="ministerios.html?PreAdolescentes">PreAdolescentes</a></li>
-            <li><a href="ministerios.html?Niños">Niños</a></li>
-            <li><a href="ministerios.html?Misiones">Misiones</a></li>
+            <li>Pastoral</li>
+            <li>Matrimonios</li>
+            <li>Jovenes</li>
+            <li>Adolescentes</li>
+            <li>PreAdolescentes</li>
+            <li>Niños</li>
         </ul>
         <ul>
             <li>
@@ -92,65 +83,10 @@
     <!-- Final Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <script>
-        function append(parent, el) {
-            return parent.appendChild(el);
-        }
-
-        const cardVideo = document.getElementById('cardVideo');
-        const url = 'https://www.googleapis.com/youtube/v3/activities' +
-            '?key=AIzaSyCcFXIBWWXpqWOlv_Hra2hAN4j5MqQCanQ' +
-            '&channelId=UCBBGT1Knv4HbYNwqqlXgl2g' +
-            '&type=video' +
-            '&part=snippet' +
-            '&order=date' +
-            '&maxResults=9';
-            
-        fetch(url)
-            .then((resp) => resp.json())
-            .then(function (data) {
-                let videos = data.items;
-                videos.forEach(element => {
-                    // ✅ Create element
-                    const card = document.createElement('div');
-                    const ratio = document.createElement('div');
-                    const iframe = document.createElement('iframe');
-                    const cardBody = document.createElement('div');
-                    const h5 = document.createElement('h5');
-                    
-
-                    // ✅ Add classes to element
-                    card.classList.add('card');
-                    ratio.classList.add('ratio', 'ratio-16x9');
-                    iframe.classList.add('embed-responsive-item');
-                    cardBody.classList.add('card-body');
-                    h5.classList.add('card-title');
-
-
-                    // ✅ Add content to element
-                    var string = element.snippet.thumbnails.default.url;
-                    var stringCortado = string.split('/')[4];
-                    iframe.src = 'https://www.youtube.com/embed/' + stringCortado;
-                    iframe.allow = 'accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
-                    iframe.allowFullscreen = true;
-                    h5.textContent = element.snippet.title;
-
-                    // ✅ add elements
-                    const cardVideo = document.getElementById('cardVideo');
-                    ratio.appendChild(iframe);
-                    cardBody.appendChild(h5);
-                    card.appendChild(cardBody);
-                    card.appendChild(ratio);
-                    cardVideo.appendChild(card);
-                });
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-
+        crossorigin="anonymous">
     </script>
-    <script src="../scripts/nav.js"></script>
+    <script>
+    </script>
+    
 </body>
-
 </html>
