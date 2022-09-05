@@ -5,3 +5,22 @@
 .contenedorDeTextoMinisterio{
     font-size: 200%
 }
+
+#contenidoMinisterio{
+    @extend %flexColumn;
+}
+
+.ContHorarios, .ContMinistro{
+    margin: 20px 100px 20px 100px; 
+    @extend %flexColumn;
+}
+
+.ImageArea{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.InfoImagen h2{
+    padding: 5px;
+}

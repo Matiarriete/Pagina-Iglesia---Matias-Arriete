@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,20 +26,41 @@
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="contactanos.html" class="nav-link text-white">Contactanos</a></li>
-                        <li class="nav-item"><a href="conocenos.html" class="nav-link text-white">Conocenos</a></li>
+                        <li class="nav-item"><a href="conocenos.html"
+                                class="nav-link text-bg-light rounded-pill">Conocenos</a></li>
                         <li class="nav-item"><a href="oracion.html" class="nav-link text-white">Oración</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-bg-light rounded-pill">Predicas</a></li>
+                        <li class="nav-item"><a href="videos.html" class="nav-link text-white">Predicas</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <section class="heroMinisterio">
             <div class="contenedorDeTexto contenedorDeTextoMinisterio">
+                <h1 id="tituloMinisterio"></h1>
             </div>
         </section>
     </header>
     <!-- Parte de videos -->
-    <div id="contenidoMinisterio"></div>
+    <div class="Info">
+        <div class="InfoImagen" id="infoImagen">
+        </div>
+        <div id="contenidoMinisterio">
+            <div id="carouselExampleIndicators" class="carousel slide w-75" data-bs-ride="true">
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+                <div class="carousel-inner" id="carouselInner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
 
@@ -46,12 +68,13 @@
             <li>
                 <h3>Conocenos</h3>
             </li>
-            <li>Pastoral</li>
-            <li>Matrimonios</li>
-            <li>Jovenes</li>
-            <li>Adolescentes</li>
-            <li>PreAdolescentes</li>
-            <li>Niños</li>
+            <li><a href="conocenos.html">General</a></li>
+            <li><a href="ministerios.html?Matrimonios">Matrimonios</a></li>
+            <li><a href="ministerios.html?Jovenes">Jovenes</a></li>
+            <li><a href="ministerios.html?Adolescentes">Adolescentes</a></li>
+            <li><a href="ministerios.html?PreAdolescentes">PreAdolescentes</a></li>
+            <li><a href="ministerios.html?Niños">Niños</a></li>
+            <li><a href="ministerios.html?Misiones">Misiones</a></li>
         </ul>
         <ul>
             <li>
@@ -82,11 +105,141 @@
     </footer>
     <!-- Final Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+    <script src="../scripts/nav.js"></script>
     <script>
+        var count = 0;
+        var array;
+        var foto;
+        var key = window.location.search.substring(1);
+
+        const textoTitulo = document.getElementById('tituloMinisterio');
+        const carouselExampleIndicators = document.getElementById('carouselExampleIndicators');
+        const carouselIndicators = document.getElementById("carouselIndicators");
+        const carouselInner = document.getElementById("carouselInner");
+        const infoImagen = document.getElementById("infoImagen");
+        const imgArea = document.createElement("img");
+        const horarios = document.createElement("h2");
+        const equipo = document.createElement("h2");
+        const textoImg = document.createElement("p");
+        const contHorarios = document.createElement("div");
+        const contMinistro = document.createElement("div");
+
+        imgArea.classList.add('ImageArea');
+        contHorarios.classList.add('ContHorarios');
+        contMinistro.classList.add('ContMinistro');
+
+        horarios.textContent = "Horarios";
+        equipo.textContent = " Ministros";
+
+
+        contHorarios.appendChild(horarios);
+        contHorarios.appendChild(textoImg);
+        contMinistro.appendChild(equipo);
+        contMinistro.appendChild(imgArea);
+        infoImagen.appendChild(contHorarios);
+        infoImagen.appendChild(contMinistro);
+        
+        switch (key) {
+            case "Jovenes":
+                textoTitulo.textContent = "Jovenes";
+                textoImg.textContent = "Sabados 20:00 hs";
+                array = ["../images/General/IMG_0087.jpg",
+                    "../images/General/IMG_0128.jpg",
+                    "../images/General/IMG_0481.jpg",
+                    "../images/General/IMG_0485.jpg",
+                    "../images/General/IMG_0490.jpg",
+                    "../images/General/IMG_0499.jpg"];
+                foto = "../images/General/IMG_0087.jpg";
+                break;
+            case "Adolescentes":
+                textoTitulo.textContent = "Adolescentes";
+                textoImg.textContent = "Viernes 20:00 hs";
+                array = ["../images/General/IMG_0087.jpg",
+                    "../images/General/IMG_0128.jpg",
+                    "../images/General/IMG_0481.jpg",
+                    "../images/General/IMG_0485.jpg",
+                    "../images/General/IMG_0490.jpg",
+                    "../images/General/IMG_0499.jpg"];
+                foto = "../images/General/IMG_0128.jpg";
+                break;
+            case "PreAdolescentes":
+                textoTitulo.textContent = "PreAdolescentes";
+                textoImg.textContent = "Sabados 17:00 hs";
+                array = ["../images/General/IMG_0087.jpg",
+                    "../images/General/IMG_0128.jpg",
+                    "../images/General/IMG_0481.jpg",
+                    "../images/General/IMG_0485.jpg",
+                    "../images/General/IMG_0490.jpg",
+                    "../images/General/IMG_0499.jpg"];
+                foto = "../images/General/IMG_0481.jpg";
+                break;
+            case "Ninos":
+                textoTitulo.textContent = "Niños";
+                textoImg.textContent = "Sabados 17:00 hs";
+                array = ["../images/General/IMG_0087.jpg",
+                    "../images/General/IMG_0128.jpg",
+                    "../images/General/IMG_0481.jpg",
+                    "../images/General/IMG_0485.jpg",
+                    "../images/General/IMG_0490.jpg",
+                    "../images/General/IMG_0499.jpg"];
+                foto = "../images/General/IMG_0485.jpg";
+                break;
+            case "Misiones":
+                textoTitulo.textContent = "Misiones";
+                textoImg.textContent = "Consultar actividades";
+                array = ["../images/General/IMG_0087.jpg",
+                    "../images/General/IMG_0128.jpg",
+                    "../images/General/IMG_0481.jpg",
+                    "../images/General/IMG_0485.jpg",
+                    "../images/General/IMG_0490.jpg",
+                    "../images/General/IMG_0499.jpg"];
+                foto = "../images/General/IMG_0490.jpg";
+                break;
+            case "Matrimonios":
+                textoTitulo.textContent = "Matrimonios";
+                textoImg.textContent = "Consultar actividades";
+                array = ["../images/General/IMG_0087.jpg",
+                    "../images/General/IMG_0128.jpg",
+                    "../images/General/IMG_0481.jpg",
+                    "../images/General/IMG_0485.jpg",
+                    "../images/General/IMG_0490.jpg",
+                    "../images/General/IMG_0499.jpg"];
+                foto = "../images/General/IMG_0499.jpg";
+                break;
+            default:
+                window.location.href = "conocenos.html";
+                break;
+        }
+
+        imgArea.src = foto;
+
+        
+        array.forEach(element => {
+            const button = document.createElement("button");
+            const item = document.createElement("div");
+            const img = document.createElement("img");
+
+            button.type = "button"
+            button.dataset.bsTarget = "#carouselExampleIndicators";
+            button.dataset.bsSlideTo = count;
+            item.classList.add("carousel-item");
+            img.classList.add("d-block", "w-100")
+            img.src = element;
+            if (count === 0) {
+                button.classList.add("active");
+                item.classList.add("active");
+            }
+            count = count + 1;
+
+            carouselIndicators.appendChild(button);
+            item.appendChild(img);
+            carouselInner.appendChild(item);
+        })
+        
     </script>
-    
+
 </body>
+
 </html>

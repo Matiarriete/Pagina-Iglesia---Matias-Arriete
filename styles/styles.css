@@ -6,12 +6,38 @@
   justify-content: center;
 }
 
-.form, .img-wrapper, .Info, .contenedorDeTextoAtajo, .contenedorDeTexto {
+.form, .img-wrapper, .Info, .contenedorDeTextoAtajo, .contenedorDeTexto, .ContHorarios, .ContMinistro, #contenidoMinisterio {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.heroMinisterio {
+  height: 700px;
+  background-image: url("../images/people-g9c568e8fa_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.contenedorDeTextoMinisterio {
+  font-size: 200%;
+}
+
+.ContHorarios, .ContMinistro {
+  margin: 20px 100px 20px 100px;
+}
+
+.ImageArea {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.InfoImagen h2 {
+  padding: 5px;
 }
 
 footer {
@@ -152,6 +178,10 @@ footer ul li a:hover {
        column-gap: 15px;
 }
 
+.contenedorDeImagenesMin a {
+  text-decoration: none;
+}
+
 .cardMinisterios {
   border-radius: 5px;
 }
@@ -207,7 +237,7 @@ footer ul li a:hover {
   background-attachment: scroll;
 }
 
-#cardPast {
+#cardMisiones {
   height: 300px;
   width: 300px;
   background-image: url("../images/JTN.jpg");
@@ -229,6 +259,13 @@ footer ul li a:hover {
   width: 300px;
   height: 300px;
   padding: 25px;
+}
+
+.fondoModal {
+  background-image: url("../../images/General/IMG_0087.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 /* Comienzo imagen */
@@ -354,18 +391,6 @@ footer ul li a:hover {
   grid-template-columns: repeat(3, 33.33%);
 }
 
-.heroMinisterio {
-  height: 700px;
-  background-image: url("../images/people-g9c568e8fa_1920.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: scroll;
-}
-
-.contenedorDeTextoMinisterio {
-  font-size: 200%;
-}
-
 /* Comienzan mediasQuerys */
 @media screen and (max-width: 1325px) and (min-width: 1024px) {
   #cardVideoInicio {
@@ -414,6 +439,9 @@ footer ul li a:hover {
     display: grid;
     grid-template-columns: repeat(1, 100%);
   }
+  #tituloMinisterio {
+    font-size: 200%;
+  }
 }
 @media screen and (max-width: 1023px) and (min-width: 600px) {
   .contenedorDeImagenesMin {
@@ -461,6 +489,11 @@ footer ul li a:hover {
     grid-template-columns: repeat(2, 200px);
   }
 }
+@media screen and (max-width: 535px) {
+  .ContHorarios, .ContMinistro {
+    margin: 20px 35px 20px 35px;
+  }
+}
 * {
   margin: 0;
 }
@@ -474,7 +507,7 @@ h1 {
 h2 {
   font-size: 35px;
   color: rgb(112, 112, 112);
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
 

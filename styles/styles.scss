@@ -1,14 +1,14 @@
 @import "./partials/extends.scss",
-        "./partials/mixins.scss",
-        "./partials/maps.scss",
-        "./partials/footer.scss",
-        "./partials/index.scss",
-        "./partials/conocenos.scss",
-        "./partials/oracion.scss",
-        "./partials/predicas.scss",
-        "./partials/contactanos.scss",
-        "./partials/ministerios",
-        "./partials/mediasQueries.scss";
+"./partials/mixins.scss",
+"./partials/maps.scss",
+"./partials/ministerios",
+"./partials/footer.scss",
+"./partials/index.scss",
+"./partials/conocenos.scss",
+"./partials/oracion.scss",
+"./partials/predicas.scss",
+"./partials/contactanos.scss",
+"./partials/mediasQueries.scss";
 
 * {
     margin: 0;
@@ -23,10 +23,11 @@ h1 {
 h2 {
     font-size: 35px;
     color: map-get($map: $colors, $key: grisH2);
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
 
 h3 {
     font-size: 23px;
 }
+
