@@ -1,7 +1,7 @@
 var nav = document.querySelector('nav');
         var scrolleado = 0;
         var resize = 0;
-        if (screen.width < 800) {
+        if (screen.width < 768) {
             nav.classList.add('bg-dark', 'shadow', 'text-center');
             resize = 1;
         }
