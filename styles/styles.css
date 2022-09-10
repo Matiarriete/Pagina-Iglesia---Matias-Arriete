@@ -255,19 +255,6 @@ footer ul li a:hover {
   background-attachment: scroll;
 }
 
-#imagePrincipal {
-  width: 300px;
-  height: 300px;
-  padding: 25px;
-}
-
-.fondoModal {
-  background-image: url("../../images/General/IMG_0087.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: scroll;
-}
-
 /* Comienzo imagen */
 .heroOracion {
   height: 700px;
