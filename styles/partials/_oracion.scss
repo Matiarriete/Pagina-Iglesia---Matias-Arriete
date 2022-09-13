@@ -6,7 +6,8 @@
 }
 
 .contenedorDeTextoOracion {
-    font-size: 200%
+    font-size: 200%;
+    background-color: map-get($map: $colors, $key: negro0_4);
 }
 
 /* Finaliza imagen */

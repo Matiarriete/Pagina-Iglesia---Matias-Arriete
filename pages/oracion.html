@@ -181,25 +181,4 @@
     </script>
 </body>
 
-
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
-
-   
-
-   const serviceID = 'default_service';
-   const templateID = 'template_efuhgjb';
-
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
-
 </html>

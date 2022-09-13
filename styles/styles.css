@@ -24,6 +24,7 @@
 
 .contenedorDeTextoMinisterio {
   font-size: 200%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .ContHorarios, .ContMinistro {
@@ -88,6 +89,7 @@ footer ul li a:hover {
   font-size: 200%;
   text-align: center;
   color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /*Finaliza Foto*/
@@ -160,6 +162,7 @@ footer ul li a:hover {
 
 .contenedorDeTextoConocenos {
   font-size: 200%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #textoInfo {
@@ -266,6 +269,7 @@ footer ul li a:hover {
 
 .contenedorDeTextoOracion {
   font-size: 200%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Finaliza imagen */
@@ -308,6 +312,7 @@ footer ul li a:hover {
 
 .contenedorDeTextoVideos {
   font-size: 200%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #cardVideo {
@@ -334,6 +339,7 @@ footer ul li a:hover {
 
 .contenedorDeTextoContactanos {
   font-size: 200%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #map {
